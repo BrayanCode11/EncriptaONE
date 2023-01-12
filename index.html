@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptaONE</title>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="body" onload="createBackground()">
+
+    <header>
+        <h1>
+            <img src="./Assets/LogoAlura.svg" alt="logo de alura">
+        </h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <div class="input-wrap">
+                <textarea id="input" class="input" rows="8" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div>
+                    <button class="icon btn-small" onclick="limpiar()"><img src="./Assets/x-circle.svg" alt="limpiar input"></button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <p class="info-text"><span class="icon-small">
+                    <img src="./Assets/exclamation-circle.svg" alt="signo de exclamación">
+                </span> Solo letras minúsculas y sin acentos</p>
+
+                <div id="buttons" class="buttons">
+                    <button class="btn" onclick="mostrarEncriptado()">Encriptar</button>
+                    <button class="btn" onclick="mostrarDesencriptado()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-section" class="view-section">
+            <div class="image-wrap">
+                <img src="./Assets/giphy (26).gif" alt="Ningún mensaje fue encontrado">
+            </div>
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por Brayan C.Angarita Echavez</p>
+        <div class="icon">
+            <a href="https://github.com/SaulMMBP/EncriptadorDeTexto-AluraChallengesONE">
+                <img src="./Assets/github.svg" alt="github link"></a>
+        </div>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/bangarita/">
+                <img src="./Assets/linkedin.svg" alt="linkedin link"></a>
+        </div>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
