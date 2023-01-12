@@ -4,7 +4,7 @@ function prepareSpace(frase) {
     document.getElementById("view-section").innerHTML = `
         <textarea id="output" class="output" rows="8" readonly></textarea>
         <button class="btn" onclick="copiar()">Copiar</button>
-    `;
+    `
 }
 
 function validacion(frase) {
